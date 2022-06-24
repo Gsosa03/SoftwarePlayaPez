@@ -31,7 +31,7 @@
         <!-- Animacion de la barra de configuracion -->
         <Grid x:Name="GridMenu"
               Background="Transparent"
-              Width="30"
+              Width="200"
               HorizontalAlignment="Left" Margin="1891,0,0,0">
             <Border Background="Gray" Width="30"></Border>
             <StackPanel Background="Transparent" VerticalAlignment="Top" >
@@ -49,7 +49,7 @@
                                         <DoubleAnimation Storyboard.TargetName="GridMenu"
                                                          Storyboard.TargetProperty="Width"
                                                          BeginTime="0:0:0"
-                                                         From="200" To="30"
+                                                         From="30" To="200"
                                                          Duration="0:0:0:0.5"/>
                                     </Storyboard>
                                 </BeginStoryboard>
@@ -61,7 +61,7 @@
                                         <DoubleAnimation Storyboard.TargetName="GridMenu"
                                                          Storyboard.TargetProperty="Width"
                                                          BeginTime="0:0:0"
-                                                         From="30" To="200"
+                                                         From="200" To="30"
                                                          Duration="0:0:0:0.5"/>
                                     </Storyboard>
                                 </BeginStoryboard>
