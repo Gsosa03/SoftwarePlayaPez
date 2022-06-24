@@ -1,0 +1,13 @@
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\bin\Release\PlayaPez.exe.config
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\MainWindow.baml
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\Page\Estadisticas.baml
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\Style\Recursos.baml
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\App.baml
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\MainWindow.g.cs
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\Page\Estadisticas.g.cs
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\App.g.cs
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\PlayaPez_Content.g.cs
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\PlayaPez_MarkupCompile.cache
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\PlayaPez.g.resources
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\PlayaPez.Properties.Resources.resources
+D:\Users\HP\Desktop\PlayaPez\PlayaPez\obj\Release\PlayaPez.csproj.GenerateResource.Cache

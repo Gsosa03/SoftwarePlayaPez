@@ -1,0 +1,208 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <Style x:Key="FocusVisual">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+    <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+    <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+    <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+    <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+    <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+    <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+    <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+    <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+    <Style x:Key="BtnEstadisticas" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                	<Grid HorizontalAlignment="Stretch" Height="377" Margin="0" VerticalAlignment="Stretch" Width="832" Cursor="Hand">
+                		<Rectangle Fill="#FF4571FF" HorizontalAlignment="Stretch" Height="377" Margin="0" Stroke="{x:Null}" VerticalAlignment="Stretch" Width="832" RadiusY="15.5" RadiusX="15.5" StrokeThickness="0"/>
+                		<TextBlock HorizontalAlignment="Left" Height="58" Margin="6.5,315.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" FontSize="48"><Run Language="es-es" Text="ESTADISTICAS"/></TextBlock>
+                	</Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="true"/>
+                        <Trigger Property="IsPressed" Value="true"/>
+                        <Trigger Property="IsEnabled" Value="false"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="BtnBiometria" TargetType="{x:Type Button}">
+    	<Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+    	<Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+    	<Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+    	<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+    	<Setter Property="BorderThickness" Value="1"/>
+    	<Setter Property="HorizontalContentAlignment" Value="Center"/>
+    	<Setter Property="VerticalContentAlignment" Value="Center"/>
+    	<Setter Property="Padding" Value="1"/>
+    	<Setter Property="Template">
+    		<Setter.Value>
+    			<ControlTemplate TargetType="{x:Type Button}">
+    				<Grid HorizontalAlignment="Stretch" Height="806" Margin="0" VerticalAlignment="Stretch" Width="462">
+    					<Rectangle Fill="#FF6F2FD3" HorizontalAlignment="Stretch" Height="806" Margin="0" RadiusY="15.5" RadiusX="15.5" Stroke="{x:Null}" StrokeThickness="0" VerticalAlignment="Stretch" Width="462"/>
+    					<TextBlock HorizontalAlignment="Left" Height="55.5" Margin="9,744,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="294"><Run Language="es-es" Text="BIOMETRIA"/></TextBlock>
+    				</Grid>
+    				<ControlTemplate.Triggers>
+    					<Trigger Property="IsDefaulted" Value="true"/>
+    					<Trigger Property="IsMouseOver" Value="true"/>
+    					<Trigger Property="IsPressed" Value="true"/>
+    					<Trigger Property="IsEnabled" Value="false"/>
+    				</ControlTemplate.Triggers>
+    			</ControlTemplate>
+    		</Setter.Value>
+    	</Setter>
+    </Style>
+    <Style x:Key="BtnInventario" TargetType="{x:Type Button}">
+    	<Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+    	<Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+    	<Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+    	<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+    	<Setter Property="BorderThickness" Value="1"/>
+    	<Setter Property="HorizontalContentAlignment" Value="Center"/>
+    	<Setter Property="VerticalContentAlignment" Value="Center"/>
+    	<Setter Property="Padding" Value="1"/>
+    	<Setter Property="Template">
+    		<Setter.Value>
+    			<ControlTemplate TargetType="{x:Type Button}">
+    				<Grid HorizontalAlignment="Stretch" Height="381" Margin="0" VerticalAlignment="Stretch" Width="410">
+    					<Rectangle Fill="#FFBF713E" HorizontalAlignment="Stretch" Height="381" Margin="0" RadiusY="15.5" RadiusX="15.5" Stroke="{x:Null}" StrokeThickness="0" VerticalAlignment="Stretch" Width="410"/>
+    					<TextBlock HorizontalAlignment="Left" Height="34" Margin="13,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="32"><Run Language="es-es" Text="INVENTARIO"/></TextBlock>
+    				</Grid>
+    				<ControlTemplate.Triggers>
+    					<Trigger Property="IsDefaulted" Value="true"/>
+    					<Trigger Property="IsMouseOver" Value="true"/>
+    					<Trigger Property="IsPressed" Value="true"/>
+    					<Trigger Property="IsEnabled" Value="false"/>
+    				</ControlTemplate.Triggers>
+    			</ControlTemplate>
+    		</Setter.Value>
+    	</Setter>
+    </Style>
+    <Style x:Key="BtnClimatica" TargetType="{x:Type Button}">
+    	<Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+    	<Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+    	<Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+    	<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+    	<Setter Property="BorderThickness" Value="1"/>
+    	<Setter Property="HorizontalContentAlignment" Value="Center"/>
+    	<Setter Property="VerticalContentAlignment" Value="Center"/>
+    	<Setter Property="Padding" Value="1"/>
+    	<Setter Property="Template">
+    		<Setter.Value>
+    			<ControlTemplate TargetType="{x:Type Button}">
+    				<Grid HorizontalAlignment="Stretch" Height="381" Margin="0" VerticalAlignment="Stretch" Width="410">
+    					<Rectangle Fill="#FF00A7DC" HorizontalAlignment="Stretch" Height="378" Margin="0" RadiusY="15.5" RadiusX="15.5" Stroke="{x:Null}" StrokeThickness="0" VerticalAlignment="Stretch" Width="410"/>
+    					<TextBlock HorizontalAlignment="Left" Height="69" Margin="1,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontSize="32"><Run Language="es-es" Text="ESTACION CLIMATICA"/></TextBlock>
+    				</Grid>
+    				<ControlTemplate.Triggers>
+    					<Trigger Property="IsDefaulted" Value="true"/>
+    					<Trigger Property="IsMouseOver" Value="true"/>
+    					<Trigger Property="IsPressed" Value="true"/>
+    					<Trigger Property="IsEnabled" Value="false"/>
+    				</ControlTemplate.Triggers>
+    			</ControlTemplate>
+    		</Setter.Value>
+    	</Setter>
+    </Style>
+    <Style x:Key="BtnOxigeno" TargetType="{x:Type Button}">
+    	<Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+    	<Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+    	<Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+    	<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+    	<Setter Property="BorderThickness" Value="1"/>
+    	<Setter Property="HorizontalContentAlignment" Value="Center"/>
+    	<Setter Property="VerticalContentAlignment" Value="Center"/>
+    	<Setter Property="Padding" Value="1"/>
+    	<Setter Property="Template">
+    		<Setter.Value>
+    			<ControlTemplate TargetType="{x:Type Button}">
+    				<Grid HorizontalAlignment="Stretch" Height="230" Margin="0" VerticalAlignment="Stretch" Width="390">
+    					<Grid.ColumnDefinitions>
+    						<ColumnDefinition Width="*"/>
+    					</Grid.ColumnDefinitions>
+    					<Rectangle Fill="#FF06932E" HorizontalAlignment="Stretch" Height="230" Margin="0" RadiusY="15.5" RadiusX="15.5" Stroke="{x:Null}" VerticalAlignment="Stretch" Width="390" StrokeThickness="0"/>
+    					<TextBlock HorizontalAlignment="Left" Height="38" Margin="2,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="32"><Run Language="es-es" Text="OXIGENO"/></TextBlock>
+    				</Grid>
+    				<ControlTemplate.Triggers>
+    					<Trigger Property="IsDefaulted" Value="true"/>
+    					<Trigger Property="IsMouseOver" Value="true"/>
+    					<Trigger Property="IsPressed" Value="true"/>
+    					<Trigger Property="IsEnabled" Value="false"/>
+    				</ControlTemplate.Triggers>
+    			</ControlTemplate>
+    		</Setter.Value>
+    	</Setter>
+    </Style>
+    <Style x:Key="BtnPh" TargetType="{x:Type Button}">
+    	<Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+    	<Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+    	<Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+    	<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+    	<Setter Property="BorderThickness" Value="1"/>
+    	<Setter Property="HorizontalContentAlignment" Value="Center"/>
+    	<Setter Property="VerticalContentAlignment" Value="Center"/>
+    	<Setter Property="Padding" Value="1"/>
+    	<Setter Property="Template">
+    		<Setter.Value>
+    			<ControlTemplate TargetType="{x:Type Button}">
+    				<Grid HorizontalAlignment="Stretch" Height="230" Margin="0" VerticalAlignment="Stretch" Width="390">
+    					<Rectangle Fill="#FF28539D" HorizontalAlignment="Stretch" Height="230" Margin="0" RadiusY="15.5" RadiusX="15.5" Stroke="{x:Null}" VerticalAlignment="Stretch" Width="390" StrokeThickness="0"/>
+    					<TextBlock HorizontalAlignment="Left" Height="38" Margin="4,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" FontSize="32"><Run Language="es-es" Text="PH°"/></TextBlock>
+    				</Grid>
+    				<ControlTemplate.Triggers>
+    					<Trigger Property="IsDefaulted" Value="true"/>
+    					<Trigger Property="IsMouseOver" Value="true"/>
+    					<Trigger Property="IsPressed" Value="true"/>
+    					<Trigger Property="IsEnabled" Value="false"/>
+    				</ControlTemplate.Triggers>
+    			</ControlTemplate>
+    		</Setter.Value>
+    	</Setter>
+    </Style>
+    <Style x:Key="BtnTemperatura" TargetType="{x:Type Button}">
+    	<Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+    	<Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+    	<Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+    	<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+    	<Setter Property="BorderThickness" Value="1"/>
+    	<Setter Property="HorizontalContentAlignment" Value="Center"/>
+    	<Setter Property="VerticalContentAlignment" Value="Center"/>
+    	<Setter Property="Padding" Value="1"/>
+    	<Setter Property="Template">
+    		<Setter.Value>
+    			<ControlTemplate TargetType="{x:Type Button}">
+    				<Grid HorizontalAlignment="Stretch" Height="230" Margin="0" VerticalAlignment="Stretch" Width="390">
+    					<Rectangle Fill="#FFE74C3C" HorizontalAlignment="Stretch" Height="230" Margin="0" RadiusY="15.5" RadiusX="15.5" Stroke="{x:Null}" VerticalAlignment="Stretch" Width="390" StrokeThickness="0"/>
+    					<TextBlock HorizontalAlignment="Left" Height="40" Margin="2,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" FontSize="32"><Run Language="es-es" Text="TEMPERATURA"/></TextBlock>
+    				</Grid>
+    				<ControlTemplate.Triggers>
+    					<Trigger Property="IsDefaulted" Value="true"/>
+    					<Trigger Property="IsMouseOver" Value="true"/>
+    					<Trigger Property="IsPressed" Value="true"/>
+    					<Trigger Property="IsEnabled" Value="false"/>
+    				</ControlTemplate.Triggers>
+    			</ControlTemplate>
+    		</Setter.Value>
+    	</Setter>
+    </Style>
+</ResourceDictionary>
